@@ -15,44 +15,38 @@ var concat = require('gulp-concat'); //tüm js dosyalarını birleştirip all.js
 
 var path = {
     build: { //Burada işlemden sonra bitmiş dosyaların nereye koyulacağını gösteriyoruz
-        html: 'build/',
-        js: 'build/js/',
-        vendor: 'build/js/vendor/', //src deki vendor klasörünü buildeki vendor klasörüne eklemek için 
-        css: 'build/css/main/',
-        images: 'build/img/',
-        fonts: 'build/fonts/',
-        libs: 'build/libs/' //bower ile src klasörüne yüklediğim dosyaları build klasörüne eklemek için 
+        // html: 'build/',
+        js: 'js/',
+        css: 'css/',
+        images: 'img/',
+        fonts: 'css/fonts/'
     },
     src: { //Burası kaynaklar
-        html: 'src/*.html', //Синтаксис src/*.html говорит gulp что мы хотим взять все файлы с расширением .html
-        js: 'src/js/main/**/*.js',
-        vendor: 'src/js/vendor/*.js',
+        // html: 'src/*.html', //Синтаксис src/*.html говорит gulp что мы хотим взять все файлы с расширением .html
+        js: 'src/js//**/*.js',
         css: 'src/css/main.scss',
-        images: 'src/img/**/*.*',
-        fonts: 'src/fonts/**/*.*',
-        libs: 'src/libs/**/'
+        images: 'src/images/**/*.*',
+        fonts: 'src/fonts/**/*.*'
     },
     watch: { //Burada izlemek istediğimiz dosyaları belirtiyoruz
-        html: 'src/**/*.html',
-        js: 'src/js/main/*.js',
-        vendor: 'src/js/vendor/*.js',
+        // html: 'src/**/*.html',
+        js: 'src/js/**/*.js',
         css: 'src/css/**/*.scss',
-        images: 'src/img/**/*.*',
-        fonts: 'src/fonts/**/*.*',
-        libs: 'src/libs/'
+        images: 'src/images/**/*.*',
+        fonts: 'src/fonts/**/*.*'
     },
 };
 
 
-gulp.task('html:build', function () {
-    gulp.src(path.src.html) //Выберем файлы по нужному пути
-    .on('error', function(err) {
-        console.log(err)
-        this.emit('end')
-    })
-        .pipe(rigger()) //Прогоним через rigger
-        .pipe(gulp.dest(path.build.html)); //Выплюнем их в папку build
-    });
+// gulp.task('html:build', function () {
+//     gulp.src(path.src.html) //Выберем файлы по нужному пути
+//         .on('error', function(err) {
+//             console.log(err)
+//             this.emit('end')
+//         })
+//         .pipe(rigger()) //Прогоним через rigger
+//         .pipe(gulp.dest(path.build.html)); //Выплюнем их в папку build
+// });
 
 
 
@@ -60,7 +54,6 @@ gulp.task('js:build', function () {
     gulp.src(path.src.js) //burdakileri al derle
 
     .pipe(concat('all.js'))
-    .pipe(gulp.dest(path.build.js))
     .pipe(minify({
         ext:{
 
@@ -100,52 +93,27 @@ gulp.task('image:build', function () {
     .pipe(gulp.dest(path.build.images));
 });
 
-gulp.task('libs:build', function () {
-    gulp.src(path.src.libs) 
-    .on('error', function(err) {
-        console.log(err)
-        this.emit('end')
-    })
-    .pipe(gulp.dest(path.build.libs));
-});
-
-
-gulp.task('vendor:build', function () {
-    gulp.src(path.src.vendor) 
-    .on('error', function(err) {
-        console.log(err)
-        this.emit('end')
-    })
-    .pipe(gulp.dest(path.build.vendor));
-});
-
 
 
 gulp.task('fonts:build', function() {
     gulp.src(path.src.fonts)
-        .on('error', function(err) {
-        console.log(err)
-        this.emit('end')
-    })
     .pipe(gulp.dest(path.build.fonts))
 });
 
 
 gulp.task('build', [
-    'html:build',
+    //'html:build',
     'js:build',
     'css:build',
     'fonts:build',
-    'image:build',
-    'libs:build',
-    'vendor:build'
+    'image:build'
     ]);
 
 
 gulp.task('watch', function(){
-    watch([path.watch.html], function(event, cb) {
-        gulp.start('html:build');
-    });
+    // watch([path.watch.html], function(event, cb) {
+    //     gulp.start('html:build');
+    // });
     watch([path.watch.css], function(event, cb) {
         gulp.start('css:build');
     });
@@ -157,14 +125,6 @@ gulp.task('watch', function(){
     });
     watch([path.watch.fonts], function(event, cb) {
         gulp.start('fonts:build');
-    });
-
-    watch([path.watch.libs], function(event, cb) {
-        gulp.start('libs:build');
-    });
-
-    watch([path.watch.vendor], function(event, cb) {
-        gulp.start('vendor:build');
     });
 });
 

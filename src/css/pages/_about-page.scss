@@ -1,0 +1,87 @@
+.about-page{
+
+  &__container{
+    margin: 0 7.35%;
+  }
+
+} 
+
+.about-page__img{
+  max-height: 60rem;
+}
+
+.about-page__container2{
+ margin: 0 7.35%; 
+ position: relative;
+}
+
+.about-page__text-right{
+  text-align: right;
+  font-family: "Lato-Light",sans-serif;
+  font-size: 2.4rem;
+  line-height: 1.2;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.about-page__img{
+  -webkit-filter: drop-shadow(23px 24px 15px rgba(0, 0, 0, 0.6));
+  filter: drop-shadow(23px 24px 15px rgba(0, 0, 0, 0.6));
+} 
+
+.about-page__red{
+  background-image: url("../img/aboutusredline2.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  padding-bottom: 18rem;
+
+  @include respondmax(xl){
+
+    background-size: contain;
+  } 
+
+  @include respondmax(lg){
+    padding-bottom: 25rem;
+
+  } 
+
+  @include respondmax(md){
+    padding-bottom: 20rem;
+
+  } 
+
+  @include respondmax(sm){
+    background: none;
+    padding-bottom: 8rem;
+  } 
+}
+
+.about-page__green{
+ background-image: url("../img/aboutusgreenline.png");
+ background-repeat: no-repeat;
+ background-position: bottom;
+ padding-bottom: 10rem;
+
+ @include respondmax(xl){
+
+  padding-bottom: 15rem;
+} 
+
+ @include respondmax(lg){
+
+  background-size: contain;
+} 
+
+@include respondmax(sm){
+  background: none;
+  
+} 
+}
+
+.about-page__text-left{
+  font-family: "Lato-Light",sans-serif;
+  font-size: 2.4rem;
+  line-height: 1.2;
+  margin-top: 4rem;
+}

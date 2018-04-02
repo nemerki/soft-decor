@@ -1,0 +1,63 @@
+ .gallery-page{
+ 	position: relative;
+ 	padding-bottom: 5rem;
+ 	.sliders__leftline{
+ 		left: 7.35%;
+ 		top: 0;
+ 	}
+
+ 	.sliders__rightline{
+ 		top: 50%;
+ 		left: 0%;
+ 		
+ 	}
+ 	.sliders__ball{
+ 		top: 22rem;
+ 		left: 94%;
+ 		z-index: 2;
+ 	}
+
+ 	.fa{
+ 		color: #fff;
+ 		font-size: 7rem;
+ 	}
+ 	
+
+ 	.products__tends-left img {
+ 		height: 100%;
+ 	}
+
+ 	.shopping-popup__content{
+ 		background: transparent;
+ 		box-shadow: none;
+ 	}
+
+ 	.shopping-popup__close:link, .shopping-popup__close:visited{
+ 		top: -2rem;
+ 		right: 0;
+ 		font-size: 6rem;
+ 		color: #fff;
+ 		z-index: 1000;
+ 	}
+ }
+
+ .blog-list__popup-img{
+ 	position: relative;
+ 	left: 50%;
+ 	transform: translateX(-50%);
+ }
+
+ .gallery-page__next{
+ 	display: none;
+ 	position: absolute;
+ 	top: 50%;
+ 	right: 0;
+ 	transform: translateY(-50%);
+ }
+ .gallery-page__prev{
+ 	display: none;
+ 	position: absolute;
+ 	top: 50%;
+ 	left: 0;
+ 	transform: translateY(-50%);
+ }

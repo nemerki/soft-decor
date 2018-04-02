@@ -1,0 +1,164 @@
+.products-page{
+	position: relative;
+
+	.sliders__leftline{
+		top: 79rem;
+		left: 3rem;
+		z-index: 3;
+
+		&--2{
+			left: auto;
+			right: 3rem;
+			top: 60%;
+		}
+	}
+
+	.sliders__rightline{
+		top: 32rem;
+		z-index: 3;
+		right: 1rem;
+	}
+	.sliders__star {
+		position: relative;
+		bottom: 0;
+		z-index: -1;
+		left: 40%;
+	}
+
+	.sliders__ball{
+		position: absolute;
+    top: 50%;
+    z-index: 3;
+    left: 50%;
+	}
+
+	.greenLineLight {
+		position: absolute;
+    bottom: 55rem;
+    left: 5rem;
+    z-index: 3;
+	}
+
+
+	&__tends{
+		position: relative;
+	}
+
+	&__tabs{
+		border: none; 
+		text-align: center;
+		display: flex;
+		justify-content: center;
+	}
+}
+
+
+.products-page__tends-tittle{
+	position: absolute;
+	font-family: "Daft-Brush",sans-serif;
+	font-size: 3.6rem;
+
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+
+	&--1{
+		color: #ff3d81;
+	}
+
+	&--2{
+		color: #2aabe2;
+
+	}
+
+	&--3{
+		color: #8dc73f;
+	}
+}
+
+.products-page__card{
+
+	.card{
+		border: none;
+		max-width: 55rem;
+		margin: 0 auto;
+		background-image: url('../img/cardbg.png');
+		background-size: 102% 100%;
+		padding-bottom: 5rem;
+
+	}
+
+	.card-body{
+		text-align: center;
+	}
+
+	.card-title{
+
+		font-size: 3.6rem;
+		color: #d60f7f;
+		font-family: "Comfortaa-Bold",sans-serif;
+	}
+
+	.card-text{
+		font-size: 1.8rem;
+		font-family: "Lato-Light",sans-serif;
+
+		max-width: 48rem;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.btn{
+		font-family: "Comfortaa-Bold",sans-serif;
+		font-size: 1.8rem;
+		border-radius: 3rem;
+		padding: 1rem 2.5rem; 
+		border:none;
+		background-color: #d60f7f;
+
+	}
+	&--price{
+		font-family: "Comfortaa-Bold",sans-serif;
+		font-size: 3.6rem;
+		color: #8e8e8e;
+	}
+}
+
+.products-page__card--right{
+
+	.card-title{
+
+		color: #2aabe2;
+
+	}
+
+	.btn{
+		background-color: #2aabe2;
+	}
+}
+
+.products-page__tends-cloud {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.products-page__card-img{
+	position: relative;
+
+	&--1{
+		width: 100%;
+		max-height: 60rem;
+		object-fit: fill;
+	}
+}
+.products-page__card-cloud{
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.card-img-top {
+    max-height: 45rem;
+}

@@ -1,0 +1,118 @@
+
+
+.products{
+	overflow: hidden;
+}
+.products__tends-left{
+	position: relative;
+
+
+	img{
+		width: 100%;
+	}
+
+}
+
+
+.products__tends-right{
+	background-image: url("../img/tradsbg.png");
+	position: relative;
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-size: contain;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.products__tends-tittle{
+	font-family: 'Comfortaa-Bold,',sans-serif;
+	font-size: 3.6rem;
+	
+	margin-bottom: 4rem;
+	color: #d60f7f;
+	margin-left: 3.33rem;
+
+}
+
+.products__tends-tittle2{
+	font-family: 'Comfortaa-Bold,',sans-serif;
+	font-size: 3.6rem;
+	
+	margin-bottom: 4rem;
+	color: #d60f7f;
+	margin-left: 9rem;
+
+}
+
+.products__tends-text{
+	font-size: 1.8rem;
+	margin-right: 9rem;
+	margin-left: 3.33rem;
+}
+
+.products__tends-text2{
+	font-size: 1.8rem;
+	margin-right: 9rem;
+	margin-left: 9rem;
+}
+
+.products__tends-btn{
+	text-align: center;
+	position: static;
+	bottom: -8rem;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 2.2rem;
+	font-family: "Comfortaa-Light",sans-serif;
+	color: #d60f7f;
+	margin-left: 50%;
+
+
+	img{
+		padding-bottom: 1rem;
+	}
+}
+
+
+.products__pillows-left{
+	margin-left: 8rem;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: right;
+
+	.products__tends-btn {
+		margin-right: 30%;
+		margin-left: 1%;
+	}
+
+	.products__tends-tittle {
+		margin-right: 9rem;
+	}
+
+	.sliders__rightline{
+		position: static;
+		margin-top: 3rem;
+		margin-right: 14rem;
+	}
+
+	.products__tends-tittle, .products__tends-btn {
+		
+		color: #2aabe2;
+		
+	}
+
+}
+
+.products__pillows-right{
+	
+	img{
+		width: 100%;
+		
+	}
+}
+
+
+.products__tends-cloud{
+	transform: rotate(180deg);
+}

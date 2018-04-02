@@ -1,0 +1,39 @@
+.about{
+
+	margin-top: 10rem;
+	margin-bottom: 15rem;
+	background-image: url("../img/aboutbg.png");
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+
+	.section__tittle{
+		padding-top: 13rem;
+		padding-bottom: 3rem;
+	}
+}
+.about__container{
+	margin-right: 13.5%;
+	margin-left: 13.5%;
+}
+
+.about__text{
+	margin: 0 auto;
+	width: 73%;
+	text-align: center;
+	line-height: 2;
+	margin-bottom: 6rem;
+}
+
+.about__img{
+	border-radius: 9%;
+	height: 39rem;
+	width: 100%;
+	-webkit-box-shadow: 10px 10px 53px -4px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 53px -4px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 53px -4px rgba(0,0,0,0.75);
+
+	@include respondmax(sm){
+		margin-bottom: 2rem;
+	}
+}

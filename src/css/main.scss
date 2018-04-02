@@ -1,8 +1,8 @@
-@import "abstracts/normalize";
 @import "abstracts/bt5start";
  
   
 @import "abstracts/function";
+
 @import "abstracts/mixin";
 @import "abstracts/variables";
 
@@ -11,17 +11,28 @@
 @import "base/utilities";
 
 
+@import "components/slide"; 
 @import "components/about"; 
-
+@import "components/shopping-popup";
 
    
 
 @import "layout/footer";
 @import "layout/header";
 @import "layout/navigation";
+@import "layout/products";
+@import "layout/editor";
 
-
-
+     
+@import "pages/home"; 
+@import "pages/contact-page";
+@import "pages/blog-list";
+@import "pages/about-page";
+@import "pages/gallery-page";
+@import "pages/shopping";
+@import "pages/products-page";
+@import "pages/blog-page";
+@import "pages/produc-page";
   
 
 @import "abstracts/bt5end";

@@ -1,0 +1,147 @@
+.shopping{
+	position: relative;
+	margin-top: 7rem;
+	padding-bottom: 12rem;
+
+	&__cloud{
+		z-index: 2;
+		position: relative;
+	}
+	&__img{
+		z-index: 1;
+	}
+
+	.products__tends-left{
+		max-height: 30rem;
+		max-width: 30rem;
+
+		img{
+			height: 100%;
+		}
+	}
+
+	.sliders__ball{
+		top: 0;
+		left: 0;
+		z-index: 3;
+	}
+
+	&__order{
+		text-align: center;
+	}
+
+	&__btn{
+		font-family: "Lato-Regular" , sans-serif;
+		padding: 0 6rem;
+		font-size: 3rem;
+		border-radius: 5rem;
+		background-color: #d60f7f;
+		color: #fff;
+		border-color: #d60f7f;
+		
+
+		&:hover{
+			color:#d60f7f;
+			background-color: #fff;
+		}
+
+	}
+
+	.sliders__rightline {
+		position: absolute;
+		right: 0;
+		top: 18rem;
+		z-index: -5;
+	}
+
+	.sliders__leftline {
+
+		left: 7.35%;
+		top: 0;
+	}
+
+	.section__head{
+		
+		margin-bottom: 7rem;
+	}
+
+
+	.table{
+		min-width: 900px;
+		border-collapse: separate;
+		border-spacing: 0 10rem;
+	}
+
+	.table > tbody > tr > td  {
+		vertical-align: middle;
+	}
+
+	tbody tr{
+		background-image: url('../img/shoppingbg2.png');
+		background-size: 99% 104%;
+		z-index: -1;
+		background-position: right;
+		position: relative;
+		background-repeat: no-repeat;
+	}
+}
+.table th, .table td { 
+	border-top: none !important; 
+	border-bottom: none !important; 
+}
+
+.table td { 
+	font-family: "Comfortaa-Bold",sans-serif;
+	font-size: 3rem;
+	color: #8e8e8e;
+}
+
+.table th { 
+	font-family: "Lato-Light",sans-serif;
+	font-size: 3rem;
+	color: #8e8e8e;
+}
+
+
+
+.shopping__product--red, .shopping__total--red .fa,.shopping__quantity--red .fa{
+	color: #d60f7f;
+}
+
+.shopping__product--green, .shopping__total--green .fa,.shopping__quantity--green .fa{
+	color: #2aabe2;
+}
+
+.shopping__quantity--num{
+	padding: 2.5rem;
+}
+
+.shopping__quantity p{
+	display: inline-block;
+}
+
+.shopping__total p{
+	display: inline-block;
+}
+
+.shopping__total--num{
+	margin-right: 5rem;
+}
+
+.greenLineLight{
+	position: absolute;
+	bottom: 0;
+	left: 7.35%;
+	z-index: -2;
+	filter: drop-shadow(2px 11px 8px rgba(0, 0, 0, 0.3));
+
+}
+
+.redLineCenter{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1;
+	filter: drop-shadow(2px 11px 8px rgba(0, 0, 0, 0.3));
+}

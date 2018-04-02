@@ -9,7 +9,7 @@ html{
 	height: 100%;
 	font-size: 62.5%; //burda rem'in 10 piksel olmasını ayarladık ki rahat değer verebilelim tarayıcı 16 piksel veriyor biz onun 62.5 faizini alarak 10 yaptık
 
-	/* @include respondmax(md){
+	@include respondmax(md){
 		font-size: 40%;
 	} 
 
@@ -23,7 +23,7 @@ html{
 
 	@include respondmin(xl){
 		font-size: 62.5% ; //1rem=12px
-	}		 */
+	}		
 
 }
 
@@ -34,3 +34,41 @@ body{
 
 }
 
+@font-face {
+	font-family:Alissya;
+	src:url("fonts/Alissya.otf");
+}
+
+@font-face {
+	font-family:Aldi-Regular;
+	src:url("fonts/Aldi-Regular.otf");
+}
+
+@font-face {
+	font-family:Comfortaa-Bold;
+	src:url("fonts/Comfortaa-Bold.ttf");
+}
+
+@font-face {
+	font-family:Comfortaa-Light;
+	src:url("fonts/Comfortaa-Light.ttf");
+}
+
+@font-face {
+	font-family:Comfortaa-Regular;
+	src:url("fonts/Comfortaa-Regular.ttf");
+}
+
+@font-face {
+	font-family:Lato-Light;
+	src:url("fonts/Lato-Light.ttf");
+}
+@font-face {
+	font-family:Lato-Regular;
+	src:url("fonts/Lato-Regular.ttf");
+}
+
+@font-face {
+	font-family:Daft-Brush;
+	src:url("fonts/Daft Brush.ttf");
+}
