@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
 /*
  * What follows is the result of much research on cross-browser styling.
@@ -80,6 +79,7 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/*! WEBCODER - http://webcoder.az/ Mehemmed Memmedli  16 Aprel 2016  https://github.com/nemerki */
 /*
 -sm
 -m
@@ -147,6 +147,17 @@ body {
 @font-face {
   font-family: Daft-Brush;
   src: url("fonts/Daft Brush.ttf"); }
+
+@font-face {
+  font-family: Daft-Brush;
+  src: url("fonts/Daft Brush.ttf"); }
+
+@font-face {
+  font-family: jaznr;
+  src: url("fonts/jaznr.ttf"); }
+
+.azn {
+  font-family: jaznr; }
 
 body {
   line-height: 1.5;
@@ -1377,7 +1388,7 @@ body {
   width: 5rem;
   height: 5rem; }
 
-/* colors smaşş img */
+/* colors small img */
 .colors__img-small--1 {
   background-image: url("../img/produc-page/colors1.png"); }
 
@@ -1487,6 +1498,11 @@ body {
 .sliders__leftline--2 {
   top: auto !important;
   bottom: 25rem; }
+
+.product-page__big-img {
+  -moz-background-size: cover;
+       background-size: cover;
+  background-position: center; }
 
 /* ==========================================================================
    Helper classes

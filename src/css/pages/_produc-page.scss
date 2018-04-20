@@ -111,7 +111,7 @@
 	width: 5rem;
 	height: 5rem;
 }
-/* colors smaşş img */
+/* colors small img */
 
 .colors__img-small--1{
 	background-image: url("../img/produc-page/colors1.png");
@@ -243,4 +243,10 @@
 .sliders__leftline--2{
 	top: auto !important;
 	bottom: 25rem;
+}
+
+
+.product-page__big-img {
+	background-size: cover;
+	background-position: center;
 }
